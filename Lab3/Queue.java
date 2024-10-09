@@ -10,7 +10,7 @@ public class Queue<T> {
     }
 
     public Queue(List<T> elements) {
-        this.elements = elements;
+        this.elements = new LinkedList<>(elements);;
     }
 
     public void enqueue(T element) {
@@ -35,3 +35,9 @@ public class Queue<T> {
         System.out.println();
     }
 }
+/**
+ * ERRORI:
+ * Bisogna creare un nuovo ogetto list della stessa classe di elements facendo getclass di elements
+ * Bisogna fare un controllo su elements per vedere se le istanze sono corrette(opinabile)  
+ * Bisogna fare un cast di elements per poterlo copiare in c
+ */
