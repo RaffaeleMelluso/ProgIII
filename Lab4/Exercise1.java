@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Exercise1 {
     public static void main(String[] args) {
-        Visualizer v = new Visualizer();
+        Visualizer v = new Visualizer();uh
         Filter f = new Filter();
         f.addObserver(v);
         Counter c = new Counter(f);
